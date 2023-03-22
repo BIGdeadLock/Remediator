@@ -50,7 +50,9 @@
                           "endLine": 6,
                           "endColumn": 47
                         },
-                        "insertedContent": "sha512 "
+                        "insertedContent": {
+                          "text": "const hmac = crypto.createHmac('sha512', 'a secret');"
+                        }
                       }
                     ]
                   }
