@@ -3,12 +3,12 @@
   "version": "2.1.0",
   "runs": [
     {
-"tool": {
-          "driver": {
-            "name": "JSAnalysis",
-            "version": "1.0",
-          }
+      "tool": {
+        "driver": {
+          "name": "MyHMACchecker",
+          "version": "1.0",
         }
+      },
       "results": [
         {
           "ruleId": "MyHMACChecker-001",
