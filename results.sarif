@@ -3,14 +3,12 @@
   "version": "2.1.0",
   "runs": [
     {
-      "tool": {
-        "driver": {
-          "name": "My HMAC checker",
-          "version": "1.0",
-          "informationUri": "https://github.com/my-org/my-repo",
-          "language": "javascript"
+"tool": {
+          "driver": {
+            "name": "JSAnalysis",
+            "version": "1.0",
+          }
         }
-      },
       "results": [
         {
           "ruleId": "MyHMACChecker-001",
