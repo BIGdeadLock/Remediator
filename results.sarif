@@ -1,0 +1,52 @@
+{
+  "$schema": "https://raw.githubusercontent.com/oasis-tcs/sarif-spec/master/Schemata/sarif-schema-2.1.0.json",
+  "version": "2.1.0",
+  "runs": [
+    {
+      "tool": {
+        "driver": {
+          "name": "HMAC Weakness Detector",
+          "version": "1.0.0",
+          "semanticVersion": "1.0.0",
+          "language": {
+            "name": "JavaScript",
+            "version": "ES6"
+          }
+        }
+      },
+      "artifacts": [
+        {
+          "location": {
+            "uri": "file:///root/myHMAC.js",
+            "uriBaseId": "%SRCROOT%"
+          }
+        }
+      ],
+      "results": [
+        {
+          "ruleId": "HMACWeakness",
+          "level": "error",
+          "message": {
+            "text": "Using sha256 is not safe, use 512 bit key instead."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///root/myHMAC.js",
+                  "uriBaseId": "%SRCROOT%"
+                },
+                "region": {
+                  "startLine": 6,
+                  "startColumn": 0,
+                  "endLine": 6,
+                  "endColumn": 42
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
