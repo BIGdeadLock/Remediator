@@ -21,7 +21,7 @@
             {
               "physicalLocation": {
                 "artifactLocation": {
-                  "uri": "exmaple.js",
+                  "uri": "exmaple.js"
                 },
                 "region": {
                   "startLine": 6,
@@ -38,7 +38,7 @@
                 "artifactChanges": [
                   {
                     "artifactLocation": {
-                      "uri": "exmaple.js",
+                      "uri": "exmaple.js"
                     },
                     "replacements": [
                       {
