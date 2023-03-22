@@ -46,9 +46,10 @@
                           "startLine": 6,
                           "startColumn": 1,
                           "endLine": 6,
-                          "endColumn": 47
+                          "endColumn": 48
                         },
                         "insertedContent": {
+                          "kind": "text,
                           "text": "const hmac = crypto.createHmac('sha512', 'a secret');"
                         }
                       }
