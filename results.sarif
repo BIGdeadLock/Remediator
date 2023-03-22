@@ -5,26 +5,16 @@
     {
       "tool": {
         "driver": {
-          "name": "HMAC Weakness Detector",
-          "version": "1.0.0",
-          "semanticVersion": "1.0.0",
-          "language": {
-            "name": "JavaScript",
-            "version": "ES6"
-          }
+          "name": "My HMAC checker",
+          "version": "1.0",
+          "informationUri": "https://github.com/my-org/my-repo",
+          "language": "javascript"
         }
       },
-      "artifacts": [
-        {
-          "location": {
-            "uri": "file:///root/myHMAC.js",
-            "uriBaseId": "%SRCROOT%"
-          }
-        }
-      ],
       "results": [
         {
-          "ruleId": "HMACWeakness",
+          "ruleId": "MyHMACChecker-001",
+          "ruleIndex": 0,
           "level": "error",
           "message": {
             "text": "Using sha256 is not safe, use 512 bit key instead."
@@ -33,14 +23,12 @@
             {
               "physicalLocation": {
                 "artifactLocation": {
-                  "uri": "file:///root/myHMAC.js",
+                  "uri": "./example.js",
                   "uriBaseId": "%SRCROOT%"
                 },
                 "region": {
-                  "startLine": 6,
-                  "startColumn": 0,
-                  "endLine": 6,
-                  "endColumn": 42
+                  "startLine": 1,
+                  "startColumn": 1
                 }
               }
             }
