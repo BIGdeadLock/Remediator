@@ -25,10 +25,30 @@
                   "uriBaseId": "%SRCROOT%"
                 },
                 "region": {
-                  "startLine": 1,
+                  "startLine": 6,
                   "startColumn": 1
                 }
               }
+            }
+          ],
+          "fixes": [
+            {
+              "description": "Replace sha256 with 512 bit key.",
+              "fileChanges": [
+                {
+                  "uri": "./example.js",
+                  "uriBaseId": "%SRCROOT%",
+                  "edits": [
+                    {
+                      "region": {
+                        "startLine": 6,
+                        "startColumn": 1
+                      },
+                      "newText": "Replace sha256 with 512 bit key."
+                    }
+                  ]
+                }
+              ]
             }
           ]
         }
