@@ -21,7 +21,7 @@
             {
               "physicalLocation": {
                 "artifactLocation": {
-                  "uri": "./example.js",
+                  "uri": "./exmaple.js",
                   "uriBaseId": "%SRCROOT%"
                 },
                 "region": {
@@ -39,7 +39,7 @@
                 "artifactChanges": [
                   {
                     "artifactLocation": {
-                      "uri": "./example.js",
+                      "uri": "./exmaple.js",
                       "uriBaseId": "%SRCROOT%"
                     },
                     "replacements": [
