@@ -31,26 +31,32 @@
               }
             }
           ],
-          "fixes": [
-            {
-              "description": "Replace sha256 with 512 bit key.",
-              "fileChanges": [
-                {
-                  "uri": "./example.js",
-                  "uriBaseId": "%SRCROOT%",
-                  "edits": [
-                    {
-                      "region": {
-                        "startLine": 6,
-                        "startColumn": 1
-                      },
-                      "newText": "Replace sha256 with 512 bit key."
-                    }
-                  ]
-                }
-              ]
-            }
-          ]
+            "fixes": [
+              {
+                "description": {
+                  "text": "Replace sha256 with sha512 for stronger security"
+                },
+                "artifactChanges": [
+                  {
+                    "artifactLocation": {
+                      "uri": "./example.js",
+                      "uriBaseId": "%SRCROOT%"
+                    },
+                    "replacements": [
+                      {
+                        "deletedRegion": {
+                          "startLine": 6,
+                          "startColumn": 1,
+                          "endLine": 6,
+                          "endColumn": 47
+                        },
+                        "insertedContent": "sha512 "
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
         }
       ]
     }
