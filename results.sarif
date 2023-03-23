@@ -31,10 +31,10 @@
             {
               "physicalLocation": {
                 "artifactLocation": {
-                  "uri": "exmaple.js"
+                  "uri": "Signer.java"
                 },
                 "region": {
-                  "startLine": 6,
+                  "startLine": 30,
                   "startColumn": 1
                 }
               }
@@ -48,15 +48,15 @@
                 "artifactChanges": [
                   {
                     "artifactLocation": {
-                      "uri": "exmaple.js"
+                      "uri": "Signer.java"
                     },
                     "replacements": [
                       {
                         "deletedRegion": {
-                          "startLine": 6,
+                          "startLine": 30,
                           "startColumn": 1,
-                          "endLine": 6,
-                          "endColumn": 48
+                          "endLine": 30,
+                          "endColumn": 64
                         },
                         "insertedContent": {
                           "text": "const hmac = crypto.createHmac('sha512', 'a secret');"
